@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1089793635497",
+    "project_id": "password-f676f",
+    "storage_bucket": "password-f676f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089793635497:android:1f070b81dd5108dad025b8",
+        "android_client_info": {
+          "package_name": "com.example.retrofitmy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkHaNA54OCkEPdfZokDWYMII778rbwnBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
