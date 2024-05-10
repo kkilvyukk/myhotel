@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CalendarView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,15 +19,30 @@ import com.example.retrofitmy.databinding.FragmentProfileBinding;
 public class ProfileFragment extends Fragment {
 
     private FragmentProfileBinding binding;
-
+    CalendarView calendarView1;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentProfileBinding.inflate(inflater, container, false);
-        return binding.getRoot();
+        CalendarView calendarView = binding.getRoot().findViewById(R.id.calendarView1);
 
+
+
+
+        calendarView.setOnDateChangeListener((view, year, month, dayOfMonth) -> {
+            int mYear = year;
+            int mMonth = month;
+            int mDay = dayOfMonth;
+            String selectedDate = new StringBuilder().append(mMonth + 1)
+                    .append("-").append(mDay).append("-").append(mYear)
+                    .append(" ").toString();
+            Toast.makeText(getContext(), selectedDate, Toast.LENGTH_LONG).show();
+        });
+        return binding.getRoot();
     }
 
-
-
 }
+
+
+
+
