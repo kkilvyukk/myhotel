@@ -7,12 +7,13 @@
     tools:context=".bottomnav.profile.ProfileFragment"
     >
 
+
     <CalendarView
         android:id="@+id/calendarView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:selectedWeekBackgroundColor="#9966CC"
         android:onClick="onClick"
+        android:selectedWeekBackgroundColor="#9966CC"
         android:weekNumberColor="@color/black"
         android:weekSeparatorLineColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,18 +21,19 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.305" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="spa"
+        android:text="Выберете день для брони массажа"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_spa"
@@ -45,9 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672" />
-
-
+        app:layout_constraintVertical_bias="0.781" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
