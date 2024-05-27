@@ -54,6 +54,8 @@ dependencies {
     implementation("androidx.camera:camera-view:1.3.3")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     testImplementation("junit:junit:4.13.2")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
     implementation("com.google.firebase:firebase-analytics")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

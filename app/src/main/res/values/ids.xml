@@ -3,4 +3,5 @@
     <item name="login" type="id" />
     <item name="calendarView1" type="id" />
     <item name="dateRangeText" type="id" />
+    <item name="bottomNavigationView" type="id" />
 </resources>
