@@ -52,6 +52,7 @@
         app:layout_constraintVertical_bias="0.413" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="res"
         android:id="@+id/btn_reservation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

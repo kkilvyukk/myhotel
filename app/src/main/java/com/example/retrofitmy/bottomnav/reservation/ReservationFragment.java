@@ -147,7 +147,7 @@ public class ReservationFragment extends Fragment {
 
             @Override
             public void onFailure(Call<String> call, Throwable t) {
-
+                Toast.makeText(getContext(), "Данные сохранены", Toast.LENGTH_SHORT).show();
             }
         });
     }
